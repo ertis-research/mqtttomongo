@@ -13,6 +13,8 @@ topic = "#"
 client_id = 'mqttToMongo'
 toInsert = False
 print(broker)
+print(port)
+print(type(port))
 
 def connect_mqtt() -> mqtt_client:
     def on_connect(client, userdata, flags, rc):
