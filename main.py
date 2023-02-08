@@ -1,3 +1,4 @@
+
 from paho.mqtt import client as mqtt_client
 from pymongo import MongoClient
 import json
@@ -55,7 +56,7 @@ def connect_mqtt() -> mqtt_client:
     
 
 ####################### MongoDB conection ########################################
-clientMongo = MongoClient(host = "ditto-mongodb", port=27017)
+clientMongo = MongoClient(host = os.environ['MOSQUITTO_BROKER']+"-mongodb", port=27017)
 
 def insertFailedMessagesIntoMongoDB():
     print("Saving previous messages")
