@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 
 # pull official base image
-FROM python:3.7.9
+FROM python:3.7.9-slim
 
 # set work directory
 WORKDIR /usr/src/app

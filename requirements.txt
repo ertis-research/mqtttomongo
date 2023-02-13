@@ -1,3 +1,4 @@
 dnspython==2.2.1
 paho-mqtt==1.6.1
-pymongo==4.3.2
+#pymongo==4.3.2
+minimongo
